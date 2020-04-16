@@ -1,12 +1,18 @@
 let readlineSync = require('readline-sync');
+let fs = require('fs');
 let allStudents = [];
 let student = {};
+
+function loadData() {
+
+}
 
 function mainMenu() {
     console.log('1. Show list students');
     console.log('2. Create and additon a new student');
     console.log('3. Save and exit');
 }
+
 
 function inputAStuent(student) {
     let name = readlineSync.question('Name: ');
@@ -18,26 +24,36 @@ function inputAStuent(student) {
     return student;
 }
 
+function showStudents() {
+
+}
+
 function createStudent() {
 
 }
+
+function saveAndExit() {
+
+}
+
 //xoa code nay di ne
 function main() {
-    do {
-        mainMenu()
-        let interchoose = parseInt(readlineSync.question('Nhap lua chon cua ban: '));
-        switch (interchoose) {
-            case 1:
-                console.log(allStudents);
-                break;
-            case 2:
-                allStudents.unshift(inputAStuent(student));
-                break;
-            case 3:
-
-                break;
-        }
-    } while (interchoose < 4);
+    function loadData()
+    mainMenu()
+    let interchoose = parseInt(readlineSync.question('Nhap lua chon cua ban: '));
+    switch (interchoose) {
+        case 1:
+            showStudents()
+            break;
+        case 2:
+            createStudent()
+            break;
+        case 3:
+            saveAndExit()
+            break;
+        default:
+            break;
+    }
 }
 
 main();
