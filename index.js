@@ -6,7 +6,6 @@ function mainMenu() {
     console.log('2. Create and additon a new student');
     console.log('3. Save and exit');
 }
-//xoa code roi ne
 
 function createStudent() {
     mainMenu()
