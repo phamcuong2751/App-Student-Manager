@@ -1,5 +1,6 @@
 let readlineSync = require('readline-sync');
 let allStudents = [];
+let student = {};
 
 function mainMenu() {
     console.log('1. Show list students');
@@ -18,10 +19,13 @@ function inputAStuent(student) {
 }
 
 function createStudent() {
+
+}
+//xoa code nay di ne
+function main() {
     do {
         mainMenu()
-        let interchoose = readlineSync.question('Nhập lựa chọn của bạn: ')
-        interchoose;
+        let interchoose = parseInt(readlineSync.question('Nhap lua chon cua ban: '));
         switch (interchoose) {
             case 1:
                 console.log(allStudents);
@@ -34,12 +38,6 @@ function createStudent() {
                 break;
         }
     } while (interchoose < 4);
-
-}
-//xoa code nay di ne
-function main() {
-    mainMenu()
-
 }
 
 main();
