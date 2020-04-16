@@ -6,11 +6,7 @@ function mainMenu() {
     console.log('2. Create and additon a new student');
     console.log('3. Save and exit');
 }
-
-
-////co code moiw o day ne
-//code moi ow day nua ne
-
+//xoa code roi ne
 
 function createStudent() {
     mainMenu()
