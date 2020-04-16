@@ -57,8 +57,7 @@ function saveAndExit() {
 
 function main() {
     loadData();
-    console.log(allStudents);
-    mainMenu()
+    mainMenu();
 
 }
 
