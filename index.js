@@ -11,7 +11,7 @@ function mainMenu() {
     console.log('1. Show list students');
     console.log('2. Create and additon a new student');
     console.log('3. Save and exit');
-    let interchoose = parseInt(readlineSync.question("Nhap lua chon cua ban: "));
+    let interchoose = parseInt(readlineSync.question("Nhập lựa chọn của bạn: "));
     switch (interchoose) {
         case 1:
             showStudents()
@@ -58,7 +58,6 @@ function saveAndExit() {
 function main() {
     loadData();
     mainMenu();
-
 }
 
 main();
