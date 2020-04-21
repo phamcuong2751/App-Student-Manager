@@ -54,7 +54,7 @@ function saveAndExit() {
     let content = JSON.stringify(allStudents);
     fs.writeFileSync('./data.json', content, { encoding: 'utf8' });
 }
-
+//Mới đặt lại tên Folder đó nha, test ở đây nè!!1
 function main() {
     loadData();
     mainMenu();
